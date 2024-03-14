@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BhaiGPT - Tera bhai batayega </title>
+</head>
+
+<body>
+    <center>
+        <div id="form">
+            <form action="/process_form" method="post">
+                <label for="input_field">Kya puchna hai?</label>
+                <input type="text" id="input_field" name="input_field" required>
+                <input type="file">
+                <button type="submit">Bata bhai</button>
+
+            </form><br>
+            {% if result %}
+            <p>Toh sunn : {{ result }}</p>
+            {% endif %}
+        </div>
+    </center>
+</body>
+
+</html>
